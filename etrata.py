@@ -9,12 +9,12 @@ import os.path
 # Data found here https://nvd.nist.gov/vuln/data-feeds#JSON_FEED
 
 class Vulndb:
-    def __init__(self, loadfile_path='vdb/data/*.json',
+    def __init__(self, loadfile_path='data/*.json',
                  save_sdb='searchdb.json', rebuild=False):
         self.data = []
         self.searchdb = None
         self.save_sdb=save_sdb
-        if not rebuild and os.path.isfile(self.save_sdb):
+        if not rebuild or os.path.isfile(self.save_sdb):
             self.load_saved_dbs()
         else:
             self.load_data(loadfile_path)
