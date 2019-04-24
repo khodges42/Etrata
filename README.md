@@ -16,3 +16,12 @@ This is a lightweight python script that will load/read a directory of CVEs and 
  >'CVE-2018-11776',
  >'CVE-2018-1327'}
  ```
+
+`etrata -f ~/code/production/webserver/requirements.txt`
+```  
+    bcrypt 3.1.4 : ✓
+    cryptography 0.1.0 : {'CVE-2016-9243'}
+    pyOpenSSL 18.0.0 : ✓
+    requests 2.19.1 : ✓
+    urllib3 1.23 : {'CVE-2019-11236', 'CVE-2019-11324'}
+    ```
