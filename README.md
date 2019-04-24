@@ -1,2 +1,16 @@
 # Etrata
 CI Vuln Scanner
+
+## What is it?
+This is a lightweight python script that will load/read a directory of CVEs and allow you to search on them.
+
+## Usage
+`etrata -n struts -v 2.3.32`
+```>{'CVE-2017-12611',
+ >'CVE-2017-9787',
+ >'CVE-2017-9791',
+ >'CVE-2017-9793',
+ >'CVE-2017-9804',
+ >'CVE-2017-9805',
+ >'CVE-2018-11776',
+ >'CVE-2018-1327'}```
