@@ -5,6 +5,7 @@ from IPython.display import clear_output
 from bisect import bisect_left
 from itertools import chain
 import os.path
+import argparse
 
 # Data found here https://nvd.nist.gov/vuln/data-feeds#JSON_FEED
 
@@ -103,3 +104,18 @@ class Vulndb:
                     if not vulnlist:
                         vulnlist = "✓"
                     print("    {} {} : {}".format(repo.group(0), str(vs.group(0)), vulnlist))
+                    
+if __name__ == "__main__":
+    vdb = Vulndb()
+
+parser = argparse.ArgumentParser(description='Vuln Scanner.')
+parser.add_argument('-n', '--name')
+parser.add_argument('-v', '--version')
+parser.add_argument('-f', '--file')
+args = parser.parse_args()
+
+if args.file:
+    vdb.python_requirements.parse(args.file)
+else:
+    vdb.search_vuln(args.name, args.version)
+    
