@@ -24,4 +24,7 @@ This is a lightweight python script that will load/read a directory of CVEs and 
     pyOpenSSL 18.0.0 : ✓
     requests 2.19.1 : ✓
     urllib3 1.23 : {'CVE-2019-11236', 'CVE-2019-11324'}
-    ```
+```
+
+## Disclaimer
+Don't use this for something sketchy. [There are better tools for that](https://github.com/NullArray/AutoSploit)
