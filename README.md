@@ -6,6 +6,7 @@ This is a lightweight python script that will load/read a directory of CVEs and 
 
 ## Usage
 `etrata -n struts -v 2.3.32`
+
 ```>{'CVE-2017-12611',
  >'CVE-2017-9787',
  >'CVE-2017-9791',
@@ -13,4 +14,5 @@ This is a lightweight python script that will load/read a directory of CVEs and 
  >'CVE-2017-9804',
  >'CVE-2017-9805',
  >'CVE-2018-11776',
- >'CVE-2018-1327'}```
+ >'CVE-2018-1327'}
+ ```
